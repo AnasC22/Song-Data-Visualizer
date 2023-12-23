@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 # ******************************************************************************************************
 column_names = ['title', 'artist(s)', 'release', 'num_of_streams', 'bpm', 'key', 'mode', 'danceability', 'valence', 'energy', 'acousticness', 'instrumentalness', 'liveness', 'speechiness']
 data = np.genfromtxt('spotify_data.csv', delimiter = ',', skip_header = True, dtype = str)
-# ******************************************************************************************************
-
 
 # ******************************************************************************************************
 # DEFINE BONUS CLASS
@@ -91,7 +89,7 @@ class Song:
 
 
 # ******************************************************************************************************
-# DEFINE FUNCTIONS HERE
+# DEFINE FUNCTIONS
 
 def feature_stats(input_value):
     """Calculates the highest value, lowest value, and mean value for the desired song feature. This is done by 
