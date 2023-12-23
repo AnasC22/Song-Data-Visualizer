@@ -179,12 +179,12 @@ def main():
     plt.legend()                                            # Make the legend for the plot. The location of the legend is 'best' (default value), which is where there is the least plot overlap
     plt.savefig('danceability_vs_bpm.png')                  # Save the figure in the current working directory with the filename "danceability_vs_bpm.png"
 
-    # Create bonus Song object (optional)
+    # Create bonus Song object
     bonus_row_number = int(input('Bonus - Enter any row number: '))     # Prompt the user for a bonus row number
     bonus_row = data[bonus_row_number]                                  # Stores the specified row from the data array in bonus_row
     bonus_song = Song(bonus_row)                                        # Create an instance of the Song class called bonus_song, passing in bonus_row as an argument
     
-    # Create and print bonus plot (optional)
+    # Create and print bonus plot
     bonus_song.plot_graph()                     # Calls the instance method, plot_graph() to print the bonus plot
 
 
